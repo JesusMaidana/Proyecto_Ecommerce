@@ -27,6 +27,7 @@ header {
 ul {
     display: flex;
     list-style-type: none;
+    margin-right: 30px;
 }
 
 ul li a {
@@ -94,7 +95,7 @@ main p {
 .cta {
     margin-top: 20px;
     padding: 10px;
-    font-size: 1rem;
+    font-size: .7rem;
     font-weight: 300px;
     color: beige;
     border-width: 1px;
