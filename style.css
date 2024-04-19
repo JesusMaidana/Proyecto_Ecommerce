@@ -103,5 +103,6 @@ main p {
     border-color: beige;
     border-style: solid;
     background-color: transparent;
+    cursor: pointer;
 
 }
