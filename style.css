@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.fondoVioleta {
+    background: linear-gradient(90deg, rgba(169,139,195,1) 0%, rgba(188,169,217,1) 39%, rgba(186,165,217,1) 84%);
+    height: 90vh;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a {
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: .8rem;
+    color: beige;
+}
+
+    ul li a:hover {
+    color: rgb(0, 0, 0);
+}
