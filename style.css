@@ -54,20 +54,23 @@ li a:hover::after{
 main{
     display: flex;
     height: 80vh;
-    justify-content: center; /*horizontal*/
+    justify-content: space-between; /*horizontal*/
     align-items: center; /*vertical*/
-    /* border: 1px solid red; */
+    /* border: 1px solid greenyellow; */
     
 }
 
 .imagenMain{
     max-width: 300px;
+    margin-right: 200px;
     height: auto;
+    border-radius: 20px;
 }
 
 .content-izquierda {
     width: 40%;
-    margin-right: 10%;
+    margin-left: 100px;
+    /* border: solid red; */
 }
 
 main h1{
@@ -97,6 +100,7 @@ main p {
     border-width: 1px;
     border-radius: 5px;
     border-color: beige;
+    border-style: solid;
     background-color: transparent;
 
 }
