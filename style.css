@@ -13,13 +13,11 @@ body {
 
 /*Nav y el main */
 
-
-
 .fondoVioleta {
     background: linear-gradient(90deg, rgba(169, 139, 195, 1) 0%, rgba(188, 169, 217, 1) 39%, rgba(186, 165, 217, 1) 84%);
     height: 700px;
     width: 100%;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
 }
 
 header {
@@ -61,10 +59,8 @@ li a:hover::after {
 main {
     display: flex;
     height: 80vh;
-    justify-content: space-between;
-    /*horizontal*/
-    align-items: center;
-    /*vertical*/
+    justify-content: space-between; /*horizontal*/
+    align-items: center; /*vertical*/
     /* border: 1px solid greenyellow; */
 
 }
@@ -112,21 +108,16 @@ main p {
     border-style: solid;
     background-color: transparent;
     cursor: pointer;
-
 }
 
-/* logos-en el main */
-
-
+/* Logos-en el main */
 
 .logos-main {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     padding: 0;
     list-style-type: none;
-
-
+    /* border: 1px solid red; */
 }
 
 .logos-main li {
