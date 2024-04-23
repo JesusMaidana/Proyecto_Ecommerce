@@ -25,9 +25,11 @@ body {
 /*Nav y el main */
 
 .fondoVioleta {
+    position: absolute;
     background: var(--bg-color);
-    height: 700px;
+    height: 218vh;
     width: 100%;
+    z-index: -1;
     /* border: 1px solid greenyellow; */
 }
 
@@ -49,7 +51,6 @@ header {
 ul {
     display: flex;
     list-style-type: none;
-    /* margin-right: 30px; */
 }
 
 ul li a {
@@ -58,6 +59,7 @@ ul li a {
     font-size: .9rem;
     color: beige;
     display: inline-block;
+    
 }
 
 li a::after {
@@ -67,6 +69,7 @@ li a::after {
     width: 0;
     background-color: #c4c4f7;
     opacity: 0.5;
+    
 }
 
 li a:hover::after {
@@ -98,7 +101,6 @@ p {
 
 .content-hero {
     display: flex;
-    /* flex-wrap: wrap; */
     min-height: 80vh;
     justify-content: space-around; /*horizontal*/
     align-items: center; /*vertical*/
@@ -110,7 +112,6 @@ p {
 .content-izquierda {
     width: 30%;
     height: auto;
-    /* margin-left: 100px; */
     /* border: solid red; */
 }
 
@@ -188,48 +189,40 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid black; */
     width: 100%;
     height: 200px;
     margin: 0 auto;
+    /* border: 1px solid black; */
 }
 
 .barraBusqueda {
-    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 390px;
-    /* border: 1px solid red; */
     height: 50px;
     background-color: #dadadab1;
     border-radius: 20px;
+    /* border: 1px solid red; */
 }
 
-.barraSola {
-    position: absolute;
-    top: 14px;
-    left: 20px;
+.barraInput {
+    
+    padding: 3;
     border: none; /* Elimina el borde */
     outline: none; /* Elimina el contorno al hacer clic */
     background: transparent; /* Hace el fondo del input transparente */
-}
-
-.cajabusqueda {
-    position: relative;
-    
+    /* border: 1px solid greenyellow; */
 }
 
 .botonBusqueda {
-    position: absolute;
-    top: 9px;
-    right: 10px;
+    
     padding: 6px;
-    /* border: 1px solid blue; */
+    /* border: 1px solid rgb(8, 0, 255); */
     font-size: .8rem;
     background-color: #7a006272;
     color: var(--primary-color);
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.4);
-
 }
-
-
