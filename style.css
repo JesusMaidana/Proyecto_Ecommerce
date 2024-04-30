@@ -35,7 +35,7 @@ body {
 
 .logo {
     position: absolute;
-    top: 25px;
+    top: 5px;
     left: 40px;
 }
 
@@ -49,8 +49,10 @@ header {
 }
 
 ul {
+    height: 30px;
     display: flex;
     list-style-type: none;
+    /* border: solid 1px forestgreen; */
 }
 
 ul li a {
@@ -59,8 +61,22 @@ ul li a {
     font-size: .9rem;
     color: beige;
     display: inline-block;
-    
+    /* border: solid 1px red; */
 }
+.menu-productos li {
+    display: none;
+   
+
+}
+.menu-productos ul {
+    display: flex;
+    flex-direction: column;
+    }
+.menu-productos:hover li {
+    display: flex;
+    flex-direction: column;    
+}
+
 
 li a::after {
     content: '';
@@ -76,6 +92,7 @@ li a:hover::after {
     width: 100%;
     transition: 0.6s;
 }
+
 
 
 h1 {
