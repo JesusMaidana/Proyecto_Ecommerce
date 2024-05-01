@@ -257,3 +257,17 @@ p {
     cursor: pointer;
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.4);
 }
+
+/* Estilos para el footer */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--color);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
