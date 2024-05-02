@@ -1,12 +1,12 @@
 :root {
     /* Variables de css */
-        --bg-color:linear-gradient(90deg, rgba(169, 139, 195, 1) 0%, rgba(188, 169, 217, 1) 39%, rgba(186, 165, 217, 1) 84%);
-        --bg-input-color: #4f31572c;
-        --primary-color:beige;
-        --secondary-color:#2b0e25;
-        --third-color:#292429;
-        --color: #fff;
-    }
+    --bg-color: linear-gradient(90deg, rgba(169, 139, 195, 1) 0%, rgba(188, 169, 217, 1) 39%, rgba(186, 165, 217, 1) 84%);
+    --bg-input-color: #4f31572c;
+    --primary-color: beige;
+    --secondary-color: #2b0e25;
+    --third-color: #292429;
+    --color: #fff;
+}
 
 
 * {
@@ -61,7 +61,11 @@ ul li a {
     font-size: .9rem;
     color: beige;
     display: inline-block;
+<<<<<<< HEAD
     /* border: solid 1px red; */
+=======
+
+>>>>>>> 1bfcdf66edbf7348ea6ca4b021634bae762adbcb
 }
 .menu-productos li {
     display: none;
@@ -85,7 +89,7 @@ li a::after {
     width: 0;
     background-color: #c4c4f7;
     opacity: 0.5;
-    
+
 }
 
 li a:hover::after {
@@ -94,6 +98,30 @@ li a:hover::after {
 }
 
 
+<<<<<<< HEAD
+=======
+.submenu-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+}
+
+
+.submenu:hover .submenu-links {
+    display: flex;
+}
+
+
+.submenu-links a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.296);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+>>>>>>> 1bfcdf66edbf7348ea6ca4b021634bae762adbcb
 
 h1 {
     font-size: 2rem;
@@ -119,8 +147,10 @@ p {
 .content-hero {
     display: flex;
     min-height: 80vh;
-    justify-content: space-around; /*horizontal*/
-    align-items: center; /*vertical*/
+    justify-content: space-between;
+    /*horizontal*/
+    align-items: center;
+    /*vertical*/
     margin: 0 150px;
     /* border: 1px solid rgb(255, 0, 0); */
 
@@ -189,17 +219,21 @@ p {
 .content-busqueda h1 {
     color: #8e8e8e;
 }
+
 .content-busqueda h2 {
     color: var(--third-color);
-    
+
 }
+
 .content-busqueda h1 span {
-    color: transparent; /* Hace que el texto sea transparente */
-    background: linear-gradient(90deg, rgba(214,166,255,1) 0%, rgba(165,115,241,1) 53%, rgba(183,147,236,1) 86%);
-    -webkit-background-clip: text; /* Para navegadores basados en WebKit (Chrome, Safari) */
+    color: transparent;
+    /* Hace que el texto sea transparente */
+    background: linear-gradient(90deg, rgba(214, 166, 255, 1) 0%, rgba(165, 115, 241, 1) 53%, rgba(183, 147, 236, 1) 86%);
+    -webkit-background-clip: text;
+    /* Para navegadores basados en WebKit (Chrome, Safari) */
     background-clip: text;
     font-size: 2rem;
-    
+
 }
 
 .content-busqueda {
@@ -224,16 +258,19 @@ p {
 }
 
 .barraInput {
-    
+
     padding: 3;
-    border: none; /* Elimina el borde */
-    outline: none; /* Elimina el contorno al hacer clic */
-    background: transparent; /* Hace el fondo del input transparente */
+    border: none;
+    /* Elimina el borde */
+    outline: none;
+    /* Elimina el contorno al hacer clic */
+    background: transparent;
+    /* Hace el fondo del input transparente */
     /* border: 1px solid greenyellow; */
 }
 
 .botonBusqueda {
-    
+
     padding: 6px;
     /* border: 1px solid rgb(8, 0, 255); */
     font-size: .8rem;
@@ -242,4 +279,18 @@ p {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para el footer */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--color);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto; 
 }

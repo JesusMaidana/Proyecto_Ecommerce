@@ -1,54 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/contacto.css">
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="../static/contacto.css">
+  <title>Contacto</title>
 </head>
+
 <body>
-    <main>
-        <div >
-            <section class="contacto">
-                <h2>Contáctanos</h2>
-                <p>¡Descubre la mejor indumentaria a precios imbatibles! Te esperamos con una amplia variedad de estilos para todos los gustos y presupuestos.</p>
-          
-                <div class="locales">
-                  <h3>Locales</h3>
-                  <ul>
-                    <li>Ituzaingó 282, Córdoba</li>
-                    <li>Commentes 161, Córdoba</li>
-                    <li>9 de Julio 72, Córdoba</li>
-                    <li>Entre Rios 45, Córdoba</li>
-                  </ul>
-                </div>
-          
-                <div class="info-contacto">
-                  <h3>Información de contacto</h3>
-                  <ul>
-                    <li>Whatsapp: +54 9 351 2534082</li>
-                    <li>Email: info@e-commerce.com</li>
-                  </ul>
-                </div>
-          
-                <div class="botones">
-                  <a href="" class="btn-whatsapp">Contactarse por WhatsApp</a>
-                  <a href="#" class="btn-chat">Continuar al chat</a>
-                </div>
-              </section>
-            </main>
-          <div>
-            <footer>
-              <p>&copy; E-Commerce</p>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="#">Productos</a></li>
-              <li><a href="/templates/pregfrecuentes.html">Preguntas Frecuentes</a></li>
-              <li><a href="#">Somos X</a></li>
-              <li><a href="/templates/contacto.html">Contacto</a></li>        
-            </footer>
+
+  <header>
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../imagenes/file.png" alt="logo" width="60px">
+      </a>
+    </div>
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li><a href="#">New In</a></li>
+        <li class="submenu"><a href="#">Productos</a>
+          <ul class="submenu-links">
+            <li><a href="">Remeras</a></li>
+            <li><a href="">Buzos</a></li>
+            <li><a href="">Jeans</a></li>
+          </ul>
+        </li>
+        <li><a href="/templates/pregfrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="#">Somos X</a></li>
+        <li><a href="/templates/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Contenedor violeta -->
+    <div class="fondoVioleta"></div>
+  </header>
+
+  <!-- Main -->
+  
+  <main>
+
+    <div class="container">
+      <form id="form" action="/">
+          <h1>Dejanos tus datos</h1>
+          <div class="input-control">
+              <label for="firstname">Nombre</label>
+              <input id="firstname" name="firstname" type="text">
+              <div class="error"></div>
           </div>
-            
-        </div>
-        
+          <div class="input-control">
+              <label for="lastname">Apellido</label>
+              <input id="lastname" name="lastname" type="text">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label for="email">Correo Electrónico</label>
+              <input id="email" name="email" type="text">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="phone" type="tel">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label for="address">Dirección</label>
+              <input id="address" name="address" type="text">
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label for="city">Ciudad</label>
+              <select id="city" name="city">
+                  <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+                  <option value="Buenos Aires">Buenos Aires</option>
+                  <option value="Cordoba">Córdoba</option>
+                  <!-- Otros options para provincias -->
+              </select>
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label>Lugar de Entrega</label>
+              <br>
+              <input id="sucursal1" name="lugar_entrega" type="radio" value="LOCAL- DOT BAIRES SHOPPING, Vedia 3626, Ciudad Autónoma de Buenos Aires.">
+              <label for="sucursal1">LOCAL- DOT BAIRES SHOPPING, Vedia 3626, Ciudad Autónoma de Buenos Aires.</label>
+              <br>
+              <input id="sucursal2" name="lugar_entrega" type="radio" value="LOCAL- ALTO AVELLANEDA SHOPPING, General Güemes 897, Avellaneda. Buenos Aires">
+              <label for="sucursal2">LOCAL- ALTO AVELLANEDA SHOPPING, General Güemes 897, Avellaneda. Buenos Aires</label>
+              <br>
+              <!-- Otros radio buttons para sucursales -->
+              <input id="domicilio" name="lugar_entrega" type="radio" value="Envío a Domicilio">
+              <label for="domicilio">Envío a Domicilio</label>
+              <br>
+              <div class="error"></div>
+          </div>
+          <div class="input-control">
+              <label for="coupon">Subir Cupón</label>
+              <input id="coupon" name="coupon" type="file" accept="image/*">
+              <div class="error"></div>
+          </div>
+          <div class="contenedor-button">
+          <button id="submitButton" type="submit">Hacer Pedido</button>
+          <div id="enviadoMensaje">¡Pedido Enviado!</div>
+          </div>
+    </div>
+      </form>
+  </div>
+  
+  
+  
+  
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 CaC_FullStack_Phyton - CodeCrew <br>
+        Creditos: Oscar Jesús Maidana; Facundo Albertus
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="../scripts/contacto.js"></script>
 </body>
+
 </html>
