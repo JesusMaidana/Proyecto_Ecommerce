@@ -61,11 +61,6 @@ ul li a {
     font-size: .9rem;
     color: beige;
     display: inline-block;
-<<<<<<< HEAD
-    /* border: solid 1px red; */
-=======
-
->>>>>>> 1bfcdf66edbf7348ea6ca4b021634bae762adbcb
 }
 .menu-productos li {
     display: none;
@@ -98,8 +93,6 @@ li a:hover::after {
 }
 
 
-<<<<<<< HEAD
-=======
 .submenu-links {
     display: none;
     flex-direction: column;
@@ -121,7 +114,6 @@ li a:hover::after {
     border-radius: 20px;
 }
 
->>>>>>> 1bfcdf66edbf7348ea6ca4b021634bae762adbcb
 
 h1 {
     font-size: 2rem;
