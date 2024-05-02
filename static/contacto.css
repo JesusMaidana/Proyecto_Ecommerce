@@ -23,6 +23,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: var(--bg-color);
 }
 
   
@@ -40,14 +41,14 @@ body {
     left: 40px;
 }
 
-.fondoVioleta {
+/* .fondoVioleta {
   position: absolute;
   background: var(--bg-color);
   height: 180vh;
   width: 100%;
   z-index: -1;
-  /* border: 1px solid greenyellow; */
-}
+  border: 1px solid greenyellow;
+} */
 
   header {
     height: 70px;
@@ -118,8 +119,11 @@ li a:hover::after {
   }
   
   #form {
-    width: 400px;
-    margin: 10vh auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    margin: 10px 0;
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 4px;
@@ -135,11 +139,11 @@ li a:hover::after {
 #form button {
     padding: 12px;
     margin-top: 20px;
-    width: 100%;
+    width: 50%;
     color: white;
     background-color: rgb(41, 57, 194);
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
 }
 
 .input-control {
