@@ -208,14 +208,21 @@ li a:hover::after {
   
   /* Footer */
   
+  
   footer {
     background-color: var(--secondary-color);
     color: var(--color);
     padding: 15px 0;
     text-align: center;
-}
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-container {
+      max-width: 1200px;
+     
+      display: flex;
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto; 
-}
+      border: solid 1px red;
+  }
