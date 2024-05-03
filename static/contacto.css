@@ -212,7 +212,7 @@ li a:hover::after {
     color: var(--color);
     padding: 15px 0;
     text-align: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
   }
@@ -222,5 +222,5 @@ li a:hover::after {
      
       display: flex;
 
-      border: solid 1px red;
+      /* border: solid 1px red; */
   }
