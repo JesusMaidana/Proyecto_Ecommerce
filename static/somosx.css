@@ -118,12 +118,7 @@
         margin-bottom: 100px;
       }
       
-      .contedor-preguntasFrecuentes {
-            display: flex;
-            height: 50vh;
-            align-items: center;
-            margin-bottom: 30%;
-      }
+      
     
       
       
@@ -158,6 +153,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
+       /* Establece la posición fija */
       bottom: 0; /* Lo coloca en la parte inferior */
       width: 100%; /* Ajusta el ancho al 100% del viewport */
       background-color: var(--secondary-color);
@@ -171,5 +167,6 @@
         
         max-width: 1200px;
         display: flex;
-        
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
