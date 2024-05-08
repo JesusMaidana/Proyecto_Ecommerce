@@ -1,0 +1,144 @@
+:root {
+    /* Variables de css */
+    --bg-color: linear-gradient(90deg, rgba(169, 139, 195, 1) 0%, rgba(188, 169, 217, 1) 39%, rgba(186, 165, 217, 1) 84%);
+    --bg-input-color: #4f31572c;
+    --primary-color: beige;
+    --secondary-color: #2b0e25;
+    --third-color: #292429;
+    --color: #fff;
+  }
+  
+  
+  /* General */
+  
+  
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+  
+  }
+  
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--bg-color);
+  }
+  
+    
+    /* Header y nav */
+  
+    .logo {
+      position: absolute;
+      top: 5px;
+      left: 40px;
+  }
+  
+
+    header {
+      height: 70px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 70px;
+      border: 1px solid rgb(34, 0, 255);
+    
+    }
+    
+
+
+    
+    ul {
+      display: flex;
+      list-style-type: none;
+      /* border: 1px solid red; */
+  }
+  
+    ul li a {
+      padding: 0 20px;
+      text-decoration: none;
+      font-size: .9rem;
+      color: beige;
+      display: inline-block;
+  
+  }
+
+  li a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: #c4c4f7;
+      opacity: 0.5;
+  
+  }
+  
+
+  
+  li a:hover::after {
+      width: 100%;
+      transition: 0.6s;
+  }
+
+
+  
+  
+  
+  /* submenu */
+
+  .submenu-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      padding: 10px;
+  }
+  
+  
+  .submenu:hover .submenu-links {
+      display: flex;
+  }
+  
+  
+  .submenu-links a {
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.296);
+      color: rgb(255, 255, 255);
+      border-radius: 20px;
+  }
+  
+
+
+
+
+
+/* -------------------------------------- */
+
+
+    /* Footer */
+    
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+         /* Establece la posición fija */
+        bottom: 0; /* Lo coloca en la parte inferior */
+        width: 100%; /* Ajusta el ancho al 100% del viewport */
+        background-color: var(--secondary-color);
+        color: var(--color);
+        padding: 15px 0;
+        text-align: center;
+      }
+      
+      
+      .footer-container {
+          
+          max-width: 1200px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+
+      
